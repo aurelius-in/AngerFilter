@@ -31,3 +31,38 @@ Example Output by Anger Filter:
 - Professional Option: "I feel disrespected when you say things like that. Can we discuss this in a more respectful and constructive manner?"
 - Casual Friendly Option: "Hey, I didn't appreciate the way you spoke to me just now. Can we talk this out and find a better way to communicate?"
 - Loving Kind Option: "I'm feeling hurt and upset right now. I know we love each other and want to make this work. Can we find a way to talk about this without hurting each other's feelings?"
+
+```
+AngerFilter/
+│
+├── app/
+│   ├── main.py
+│   ├── models.py
+│   ├── controllers.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── settings.html
+│   │   ├── about.html
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   ├── img/
+│   
+├── data/
+│   ├── raw/
+│   │   ├── raw_data.txt
+│   ├── processed/
+│   │   ├── processed_data.txt
+│   │   ├── models/
+│   
+├── docs/
+│   ├── design/
+│   ├── user_manual/
+│   
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   
+├── requirements.txt
+│
+```
