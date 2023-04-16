@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Anger Filter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('settings') }}">Settings</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Anger Filter</h1>
+        <form method="POST" action="{{ url_for('process_message') }}">
+          <label for="message">Type or speak your angry message here:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Get Alternative Suggestions</button>
+        </form>
+      </section>
+      {% if suggestions %}
+        <section>
+          <h2>Alternative Message Suggestions</h2>
+          <p>Choose one of the following options:</p>
+          <form method="POST" action="{{ url_for('send_message') }}">
+            <input type="hidden" id="message" name="message" value="{{ message }}">
+            <fieldset>
+              <legend>Professional Option:</legend>
+              <p>{{ suggestions['professional'] }}</p>
+              <button type="submit" name="option" value="professional">Send this suggestion</button>
+            </fieldset>
+            <fieldset>
+              <legend>Casual Friendly Option:</legend>
+              <p>{{ suggestions['friendly'] }}</p>
+              <button type="submit" name="option" value="friendly">Send this suggestion</button>
+            </fieldset>
+            <fieldset>
+              <legend>Loving Kind Option:</legend>
+              <p>{{ suggestions['loving'] }}</p>
+              <button type="submit" name="option" value="loving">Send this suggestion</button>
+            </fieldset>
+          </form>
+        </section>
+      {% endif %}
+    </main>
+    <footer>
+      <p>&copy; 2023 Anger Filter. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
