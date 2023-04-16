@@ -1,6 +1,13 @@
 from flask import Flask, request, render_template, redirect, url_for
 from .models import AngerFilter
 
+# This implementation defines four routes for the app:
+
+# / - The app's home page, which displays a form for users to enter their angry message input.
+# /generate_messages - This route is called when the user submits their angry message. It uses the AngerFilter class to generate alternative message suggestions, and then renders the messages.html template to display the generated messages and the original angry message.
+# /settings - This page displays the app's settings.
+# /about - This page provides information about the app.
+
 app = Flask(__name__)
 
 @app.route("/")
