@@ -25,3 +25,37 @@ The Anger Filter app is targeted towards individuals who struggle with anger man
 Ongoing user feedback will be incorporated into the app to constantly improve the generated responses and inform future updates and psychological research. The app will collect user feedback and usage data, which will be analyzed to improve the effectiveness of the GPT-generated responses.
 
 ## Proposed File Structure
+```
+AngerFilter/
+│
+├── app/
+│   ├── main.py
+│   ├── models.py
+│   ├── controllers.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── settings.html
+│   │   ├── about.html
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   ├── img/
+│   
+├── data/
+│   ├── raw/
+│   │   ├── raw_data.txt
+│   ├── processed/
+│   │   ├── processed_data.txt
+│   │   ├── models/
+│   
+├── docs/
+│   ├── design/
+│   ├── user_manual/
+│   
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   
+├── requirements.txt
+│
+```
