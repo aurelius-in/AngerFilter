@@ -28,34 +28,55 @@ Ongoing user feedback will be incorporated into the app to constantly improve th
 ```
 AngerFilter/
 │
-├── app/
-│   ├── main.py
-│   ├── models.py
-│   ├── controllers.py
-│   ├── templates/
-│   │   ├── index.html
-│   │   ├── settings.html
-│   │   ├── about.html
-│   ├── static/
-│   │   ├── css/
-│   │   ├── js/
-│   │   ├── img/
-│   
-├── data/
-│   ├── raw/
-│   │   ├── raw_data.txt
-│   ├── processed/
-│   │   ├── processed_data.txt
-│   │   ├── models/
-│   
-├── docs/
-│   ├── design/
-│   ├── user_manual/
-│   
-├── tests/
-│   ├── unit/
-│   ├── integration/
-│   
-├── requirements.txt
+├── android/
+│   ├── app/
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── java/
+│   │   │   │   ├── res/
+│   │   ├── build.gradle
+│   ├── gradle/
+│   ├── build.gradle
 │
+├── ios/
+│   ├── Runner/
+│   │   ├── AppDelegate.swift
+│   │   ├── Runner-Bridging-Header.h
+│   │   ├── Runner-Swift.h
+│   │   ├── Base.lproj/
+│   │   ├── Assets.xcassets/
+│   ├── Podfile
+│   ├── Podfile.lock
+│   ├── Runner.xcodeproj/
+│   ├── Runner.xcworkspace/
+│
+├── lib/
+│   ├── main.dart
+│   ├── models/
+│   ├── controllers/
+│   ├── views/
+│   ├── utils/
+│
+├── assets/
+│   ├── fonts/
+│   ├── images/
+│   ├── data/
+│
+├── test/
+│   ├── widget/
+│   ├── integration/
+│   ├── driver/
+│
+├── pubspec.yaml
+│
+├── README.md
+│
+├── LICENSE
+│
+├── CONTRIBUTING.md
+│
+├── CODE_OF_CONDUCT.md
+│
+├── .gitignore
+
 ```
